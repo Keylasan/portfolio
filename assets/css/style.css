@@ -22,7 +22,7 @@ font-family: 'Poppins', sans-serif;
     opacity: 0.6;
     text-transform: uppercase;
     letter-spacing: 6px;
-    font-size: 10px;
+    font-size: 2px;
     word-spacing: 6px;
     font-family:'Poppins', sans-serif;
 }
@@ -112,9 +112,28 @@ p{
 }
 
 
-.container {
+
+
+
+.contain1{
+
+  
+}
+
+.contain2 {
 width: 100%; 
-opacity: 40%;
-color: black;
-background: rgb(73, 62, 49);
+padding: 100px;
+
+}
+
+.contain3 {
+    width: 100%; 
+    padding:20px;
+    }
+
+
+.img-responsive{
+    width: 100%;
+
+
 }
