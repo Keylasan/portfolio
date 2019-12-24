@@ -58,26 +58,32 @@ background:black;
 }
 
 .my-pic{
-   padding-top: 180px;
-   padding-bottom: 180px;
-   padding-left: 450px;
+   
    opacity: 66%;
    display: flex;
    -webkit-filter: contrast(120%);
+
 }
 
+.my-pic2{
+
+    padding-right: 20px;
+}
+.aboutmoi{
+    width: 100%;
+    height: 950px;
+}
 
 h1{
 
 color:rgb(155, 155, 155); 
 opacity: 0.6; 
 font-family: 'Poppins', sans-serif;
-font-size: 13px;
-padding: 0px;
-letter-spacing: 2px;
-text-transform: uppercase;
+font-size: 22px;
+letter-spacing: 4px;
+text-transform: lowercase;
 text-align: center;
-margin-top: 10px;
+margin-top: 20px;
 word-spacing: 2px;
 }
 
@@ -90,13 +96,12 @@ p{
     font-size: 12px;
     word-spacing: 3px;
     line-height: 25px;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    padding-left: 200px ;
-    padding-right: 200px;
-    text-align: center;
+    text-align: left;
     letter-spacing: 2px;
     display:flex;
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 70px;
 
     
 }
@@ -116,7 +121,7 @@ p{
 
 
 .container{
-    padding: 60px;
+    padding: 30px;
     width:100%;
 }
 
@@ -124,24 +129,23 @@ p{
 color:rgb(155, 155, 155); 
 opacity: 0.6; 
 font-family: 'Poppins', sans-serif;
-font-size: 20px;
+font-size: 50px;
 padding: 20px;
-letter-spacing: 2px;
-text-transform: uppercase;
-text-align: center;
+letter-spacing: 6px;
+text-align: auto;
 margin-top: 10px;
-word-spacing: 2px;
+
+width: 100%;
 }
 
 
 .contain2 {
 width: 100%; 
-padding: 100px;
+padding: 30px;
 color:rgb(155, 155, 155); 
 opacity: 0.6; 
 font-family: 'Poppins', sans-serif;
 font-size: 13px;
-padding: 30px;
 letter-spacing: 2px;
 text-transform: uppercase;
 text-align: center;
@@ -149,11 +153,11 @@ margin-top: 10px;
 word-spacing: 2px;
 }
 
-}
 
 .contain3 {
     width: 100%; 
-    padding:0px;
+
+
     }
 
 
