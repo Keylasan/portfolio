@@ -5,7 +5,6 @@ margin: 0px;
 padding: 0px;
 box-sizing: border-box;
 }
-
 html{
     height: 100%;
 }
@@ -15,7 +14,7 @@ nav{
 
 display: flex;
 justify-content: space-around;
-align-items: center;
+align-items: right;
 min-height: 8vh;
 background-color: black; 
 font-family: 'Poppins', sans-serif;
@@ -48,6 +47,7 @@ width: 30%;
     font-weight: bold;
     font-size: 12px;
     text-transform: uppercase;
+    background-color: black;
 }
 
 .the-links li{
@@ -57,36 +57,93 @@ list-style: none;
 }
 
 .footer{
-
-  margin-top: auto;
+   margin-top: auto;
    background-color: black;
-   color:rgb(39, 24, 24);
+   color:rgb(135, 127, 127);
    text-align: center;
-   
-}
+   }
 
 body{
-    min-height: 100%;   
+min-height: 100%;   
 background:black;
 display: flex;
 flex-direction: column;
 }
 
-.my-pic{
+/*.pic{
    
    opacity: 66%;
    display: flex;
    -webkit-filter: contrast(120%);
+}*/
+
+#pic{
+  cursor: pointer;
+  position: relative;
+  overflow:hidden;
+  background:url(../images/keylaBack.jpg) no-repeat;
+ 
+  background-size: cover;
+  height:400px;
+  width:400px;
+
+
+  
 
 }
 
-.my-pic2{
+#pic::before{
+  content: "";
+  position:absolute;
+  filter:sepia(100%);
+  opacity: 0;
+  background:url(../images/keylaBack.jpg) no-repeat;
+  background-size: cover;
+  height:40px;
+  width:500px;
 
-    padding-right: 20px;
 }
+
+#pic:hover:before{
+  opacity:.7;
+  animation: glitch 1.5s infinite linear;
+}
+
+@keyframes glitch{
+  0%{
+    top:0;
+    background-position:12px 0;
+  }
+  20%{
+    top:80px;
+    background-position: -10px -80px;
+  }
+  40%{
+    top:160px;
+    background-position:6px -160px;
+  }
+  60%{
+    top:240px;
+    background-position: -6px -240px;
+  }
+  80%{
+    top:320px;
+    background-position:10px -320px;
+  }
+  100%{
+    top:400px;
+    background-position: -12px -400px;
+  }
+}
+
+.col{
+    padding-left: 0;
+}
+
 .aboutmoi{
     width: 100%;
-    height: 950px;
+    height: 100%;
+    margin-left:30px;
 }
 
 h1{
@@ -98,7 +155,6 @@ font-size: 22px;
 letter-spacing: 4px;
 text-transform: lowercase;
 text-align: center;
-margin-top: 20px;
 word-spacing: 2px;
 }
 
@@ -111,17 +167,15 @@ p{
     font-size: 12px;
     word-spacing: 3px;
     line-height: 25px;
-    text-align: left;
+    text-align: center;
     letter-spacing: 2px;
     display:flex;
     width: 100%;
-    margin-top: 20px;
-    padding-left: 70px;
-
+    height:100%;
     
 }
 
-.left:hover {
+/*.left:hover {
     border-style: solid;
     padding-top:10px;
 }
@@ -130,13 +184,13 @@ p{
     border-style: solid;
     padding-top:10px;
 }
-
+*/
 
 
 
 
 .container{
-    padding: 30px;
+   
     width:100%;
 }
 
@@ -252,3 +306,17 @@ input[type=text] {
         color:rgb(155, 155, 155);
         font-family: 'Poppins', sans-serif;
       }
+
+      .picDiv{
+        display:flex;
+        margin-top: 200px;
+      }
+
+      .pic{
+        display:flex;
+      }
+      
+    .aboutContainer{
+      text-align: center;
+      align-items: center;
+    }
